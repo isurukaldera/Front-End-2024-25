@@ -7,6 +7,7 @@
     --primary-color: #008CBA;
     --background-color: #f4f4f6;
     --color-dark: #111;
+    --color-card: #5a6cb2;
 }
 
 body {
@@ -246,4 +247,97 @@ section{
   clip-path: circle(150% at 0 50%);
   transition: 2s ease;
   transition-property: clip-path;
+}
+
+.container-pm {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+.product-card {
+    flex: 0 0 calc((100% - 60px) / 4); 
+    background: #dbe1dd;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.product-card .imgBx {
+    background:#FFA500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+}
+
+.product-card .imgBx img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.product-card .details {
+    padding: 15px;
+    text-align: left;
+}
+
+.product-card .details h2 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.product-card .details h2 span {
+    display: block;
+    font-size: 0.7rem;
+    color: #777;
+    letter-spacing: 1px;
+}
+
+.product-card .details p {
+    font-size: 0.8rem;
+    color: #555;
+    margin-bottom: 10px;
+    max-height: 60px;
+    overflow: hidden;
+}
+
+.product-card .details h3 {
+    font-size: 1.1rem;
+    color: var(--color-card);
+    margin-bottom: 10px;
+}
+
+.product-card .details button {
+    padding: 8px 12px;
+    background: var(--color-card);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.popular {
+    margin-bottom: 10px;
+    text-align: left;
+    color:#111;
+    font-size: 2em;
+    font-weight: 900;
 }
