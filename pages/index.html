@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,7 +17,6 @@
   <link rel="stylesheet" href="../style.css" />
   <link rel="shortcut icon" href="../images/Vain.png" type="image/png" />
 </head>
-
 <body>
   <nav class="navbar">
     <div class="container">
@@ -27,22 +25,59 @@
           <img src="../images/Vain.png" alt="logo" />
         </a>
       </div>
+      <div class="menu-btn"></div>
       <div class="main-menu">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="index.html">Products</a></li>
-            <li><a href="index.html">About Us</a></li>
-            <li><a class="btn" href="#">
-                <i class="fas fa-user"></i> Login
-            </a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html">Products</a></li>
+          <li><a href="index.html">About Us</a></li>
+          <li><a class="btn" href="#"><i class="fas fa-user"></i> Login</a></li>
         </ul>
       </div>
     </div>
   </nav>
-  <section>
-    
-  </section>
-  <script src="main.js"></script>
-</body>
 
+  <section class="hero">
+    <video class="video-slide active" src="../images/1.mp4" autoplay muted loop></video>
+    <video class="video-slide" src="../images/4.mp4" autoplay muted loop></video>
+    <video class="video-slide" src="../images/5.mp4" autoplay muted loop></video>
+
+    <div class="banner">
+      <h1>Up to 40% Off<br><span>Explore Now</span></h1>
+      <p>Limited Time Offer – Don’t Miss Out!</p>
+      <a href="#">Read More</a>
+    </div>
+
+    <div class="media-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+
+    <div class="slider-navigation">
+      <div class="nav-btn active"></div>
+      <div class="nav-btn"></div>
+      <div class="nav-btn"></div>
+    </div>
+  </section>
+
+  <script>
+    const btns = document.querySelectorAll(".nav-btn");
+    const slides = document.querySelectorAll(".video-slide");
+
+    const slidernav = function(manual) {
+      btns.forEach(btn => btn.classList.remove("active"));
+      slides.forEach(slide => slide.classList.remove("active"));
+
+      btns[manual].classList.add("active");
+      slides[manual].classList.add("active");
+    }
+
+    btns.forEach((btn, i) => {
+      btn.addEventListener("click", () => {
+        slidernav(i);
+      });
+    });
+  </script>
+</body>
 </html>
