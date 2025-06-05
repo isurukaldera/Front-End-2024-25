@@ -114,14 +114,14 @@ img {
 }
 
 section{
-    padding: 100px 200px;
+    padding: 0px 0px;
 }
 .hero {
   position: relative;
   width: 100%;
-  min-height: 20vh;
+  min-height: 70vh;
   display: flex;
-  justify-content: flex-start; 
+  justify-content: center; 
   align-items: flex-start;     
   flex-direction: column;
   background: #2696e9;
@@ -131,9 +131,10 @@ section{
 .hero .banner {
   position: relative; 
   z-index: 10;       
-  padding: 20px;      
+  padding: 50px;      
   color: #fff;
   max-width: 800px;
+  
 }
 
 .hero .banner h1{
@@ -373,6 +374,131 @@ section{
   font-size: 1.5rem;
   color: var(--color-dark);
 }
+
+.rating-bar {
+  width: 100%;
+  background: var(--color-dark);
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 10px 0;
+  height: 10px;
+}
+
+.rating-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  transition: width 0.3s ease-in-out;
+}
+
+.container-mm {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  padding: 20px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.product-card2 {
+    flex: 0 0 calc((100% - 60px) / 4); 
+    background: #dbe1dd;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card2:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.product-card2 .imgBx {
+    background:#FFA500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+}
+
+.product-card2 .imgBx img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.product-card2 .details {
+    padding: 15px;
+    text-align: left;
+}
+
+.product-card2 .details h2 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.product-card2 .details h2 span {
+    display: block;
+    font-size: 0.7rem;
+    color: #777;
+    letter-spacing: 1px;
+}
+
+.product-card2 .details p {
+    font-size: 0.8rem;
+    color: #555;
+    margin-bottom: 10px;
+    max-height: 60px;
+    overflow: hidden;
+}
+
+.product-card2 .details h3 {
+    font-size: 1.1rem;
+    color: var(--color-card);
+    margin-bottom: 10px;
+}
+
+.product-card2 .details button {
+    padding: 8px 12px;
+    background: var(--color-card);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    width: 100%;
+    text-transform: uppercase;
+}
+.section-divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 50px 0 30px;
+}
+
+.section-divider::before,
+.section-divider::after {
+    content: '';
+    flex: 1;
+    border-top: 1px solid #aaa;
+}
+
+.section-divider span {
+    padding: 0 20px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #333;
+    white-space: nowrap;
+}
+
+
+
+
+
+
 
 .footer {
   background:var(--color-dark);
