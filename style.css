@@ -509,19 +509,22 @@ section{
 
 .footer-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
+  align-items: flex-start;
+  overflow-x: auto;
   max-width: 1200px;
   margin: 0 auto;
+  gap: 20px;
 }
 
 .footer-col {
-  flex: 1 1 200px;
-  margin: 10px;
+  flex: 1 1 180px;
+  min-width: 180px;
 }
 
 .footer-col h4 {
-  font-size: 16px;
+  font-size: 14px;
   margin-bottom: 20px;
   text-transform: uppercase;
   position: relative;
@@ -572,4 +575,53 @@ section{
   border-top: 1px solid #444;
   margin-top: 30px;
   font-size: 13px;
+}
+
+.footer .card {
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1 1 200px;
+  margin: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.footer .card h4 {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.footer .card p {
+  margin-bottom: 10px;
+  color: var(--background-color);
+  font-size: 13px;
+}
+
+
+.footer .card input[type='email'] {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  background: #111;
+  color: #fff;
+}
+
+.footer .card button[type='submit'] {
+  width: 100%;
+  padding: 10px;
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.footer .card button[type='submit']:hover {
+  background-color: #007acc;
 }
