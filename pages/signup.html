@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vain</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="shortcut icon" href="../images/Vain.png" type="image/png" />
+</head>
+<body>
+  <!-- Navbar Section -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="../images/Vain.png" alt="logo" />
+        </a>
+      </div>
+      <div class="menu-btn"></div>
+      <div class="main-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="Aboutus.html">About Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- signup Section -->
+<section id="Login-details">
+  <form method="post" autocomplete="off" novalidate>
+    <h2>Sign up</h2>
+
+    <label for="YourName">Your Name</label>
+    <input type="text" id="YourName" name="YourName" placeholder="Your Name" required>
+
+    <label for="Email">Email</label>
+    <input type="email" id="Email" name="Email" placeholder="Email" required>
+
+    <label for="Password">Password</label>
+    <input type="password" id="Password" name="Password" placeholder="Password" required>
+
+    <label for="ConfirmPassword">Confirm Password</label>
+    <input type="password" id="ConfirmPassword" name="ConfirmPassword" placeholder="Confirm Password" required>
+
+    <label for="Mobilenumber">Mobile Number</label>
+    <input type="tel" id="Mobilenumber" name="Mobilenumber" placeholder="Enter Here" pattern="[0-9]{7,15}" title="Enter a valid phone number" required>
+    <div class="checkbox-remember">
+     <input type="checkbox" id="remember" name="remember" checked>
+     <label for="remember">Remember me</label>
+    </div>
+    <button class="normal" type="button" onclick="location.href='Login.html'">Sign Up</button>
+    <div class="Newadd">
+      <button type="button" class="cancelbtn" onclick="location.href='Login.html'">Already have an account?</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</section> 
+</body>

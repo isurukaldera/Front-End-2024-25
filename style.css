@@ -707,9 +707,111 @@ section{
 
 
 /*signUp*/
+#Login-details {
+  max-width: 400px;
+  display: flex;
+  justify-content: space-between;
+  margin: 50px auto;
+  padding: 30px 25px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#Login-details h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 900;
+  color: var(--color-dark);
+  letter-spacing: 1.2px;
+}
+
+#Login-details input[type="text"],
+#Login-details input[type="email"],
+#Login-details input[type="password"] {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 1.8px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+#Login-details input[type="text"]:focus,
+#Login-details input[type="email"]:focus,
+#Login-details input[type="password"]:focus {
+  border-color: #2696e9;
+  outline: none;
+}
+
+.checkbox-remember {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+  color: var(--color-dark);
+}
 
 
+#Login-details label {
+  font-size: 0.95rem;
+  color:var(--color-dark);
+  user-select: none;
+}
 
+#Login-details button.normal {
+  width: 100%;
+  background: var(--primary-color);
+  color: #ccc;
+  font-weight: 600;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+#Login-details button.normal:hover {
+  background: var(--primary-color);
+}
+
+.Newadd {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.Newadd .cancelbtn {
+  background: none;
+  border: none;
+  color: #4a90e2;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 0;
+  font-size: 0.9rem;
+  text-decoration: underline;
+}
+
+.Newadd .cancelbtn:hover {
+  color: #357ABD;
+}
+
+.Newadd .psw a {
+  color: #4a90e2;
+  text-decoration: none;
+}
+
+.Newadd .psw a:hover {
+  text-decoration: underline;
+}
 
 
 .footer {

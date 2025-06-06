@@ -36,7 +36,7 @@
       </div>
     </div>
   </nav>
-
+  <!-- Login Section -->
 <section class="login-section">
   <form id="loginForm" method="post" class="login-form">
     <h2>Welcome Back</h2>
@@ -67,10 +67,7 @@
 
 <script>
   document.getElementById('loginForm').addEventListener('submit', function(e) {
-    e.preventDefault();  // Stop form submission
-    // Here you can add validation or login logic
-
-    // Redirect to index.html
+    e.preventDefault();
     window.location.href = 'index.html';
   });
 </script>
