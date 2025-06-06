@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vain</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="shortcut icon" href="../images/Vain.png" type="image/png" />
+</head>
+<body>
+  <!-- Navbar Section -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="../images/Vain.png" alt="logo" />
+        </a>
+      </div>
+      <div class="menu-btn"></div>
+      <div class="main-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="Aboutus.html">About Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<section class="login-section">
+  <form id="loginForm" method="post" class="login-form">
+    <h2>Welcome Back</h2>
+
+    <div class="input-group">
+      <input type="email" name="Email" placeholder="Email" required />
+    </div>
+
+    <div class="input-group">
+      <input type="password" name="Password" placeholder="Password" required />
+    </div>
+
+    <div class="login-options">
+      <label>
+        <input type="checkbox" name="remember" checked />
+        Remember me
+      </label>
+      <a href="#" class="forgot-link">Forgot password?</a>
+    </div>
+
+    <button type="submit" class="btn-login">Login</button>
+    <p class="signup-link">
+      Don’t have an account?
+      <a href="signup.html">Sign up</a>
+    </p>
+  </form>
+</section>
+
+<script>
+  document.getElementById('loginForm').addEventListener('submit', function(e) {
+    e.preventDefault();  // Stop form submission
+    // Here you can add validation or login logic
+
+    // Redirect to index.html
+    window.location.href = 'index.html';
+  });
+</script>
+
+
+
+  
+</body>

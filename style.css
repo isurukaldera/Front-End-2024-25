@@ -538,8 +538,8 @@ section{
 
 .about-map {
     flex: 1;
-    min-width: 250px;
-    max-width: 350px;
+    min-width: 350px;
+    max-width: 550px;
     height: 200px;
     border-radius: 10px;
     overflow: hidden;
@@ -609,6 +609,108 @@ section{
     background: var(--primary-color);
     
 }
+/* login*/
+.login-section {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4f4f6;
+  padding: 40px 20px;
+}
+
+.login-form {
+  background: #fff;
+  padding: 40px 30px;
+  max-width: 400px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+  color: #222;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #f9f9f9;
+  transition: border 0.3s;
+}
+
+.input-group input:focus {
+  border-color: var(--primary-color);
+  outline: none;
+  background: #fff;
+}
+
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.login-options a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.login-options a:hover {
+  text-decoration: underline;
+}
+
+.btn-login {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 8px;
+  color: var(--background-color);
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-login:hover {
+  background:var(--primary-color);
+}
+.signup-link {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.signup-link a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+
+/*signUp*/
+
+
+
+
 
 .footer {
   background:var(--color-dark);
@@ -692,8 +794,8 @@ section{
   padding: 20px;
   border-radius: 10px;
   flex: 1 1 200px;
-  margin: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin-right: 50px;
 }
 
 .footer .card h4 {
@@ -714,14 +816,14 @@ section{
   padding: 10px 12px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 10px;              
   font-size: 14px;
-  background: #111;
+  background: var(--color-dark);
   color: #fff;
 }
 
 .footer .card button[type='submit'] {
-  width: 100%;
+  width: 91%;
   padding: 10px;
   background: var(--primary-color);
   color: #fff;
