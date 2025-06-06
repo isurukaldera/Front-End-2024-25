@@ -494,11 +494,121 @@ section{
     white-space: nowrap;
 }
 
+/*About Page*/
+.modern-about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 60px 80px;
+}
 
+.about-text {
+    flex: 2;
+    min-width: 300px;
+}
 
+.about-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #222;
+}
 
+.about-text p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
 
+.cta-button {
+    display: inline-block;
+    background-color: #088178;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+}
 
+.cta-button:hover {
+    background-color: #06665f;
+}
+
+.about-map {
+    flex: 1;
+    min-width: 250px;
+    max-width: 350px;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/*FAQ*/
+.faq{
+    padding: 40px 0;
+}
+
+.faq .faq-group {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+
+.faq .faq-group .faq-group-header {
+    padding: 20px 0;
+    margin-bottom: 15px;
+    position: relative;
+
+}
+
+.faq .faq-group .faq-group-header h4 {
+    font-weight: 600;
+    width: 95%;
+
+}
+
+.faq .faq-group .faq-group-header i {
+    position: absolute; 
+    right: 0;
+    top: 35px;
+    font-size: 1.1rem;
+    cursor: pointer;
+
+}
+
+.faq .faq-group .faq-group-body {
+  display: none;
+}
+
+.faq .faq-group .faq-group-body.open {
+  display: block;
+}
+
+.faq ul.faq-menu {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ddd;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.faq ul.faq-menu li {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.faq ul.faq-menu li.active {
+    background: var(--primary-color);
+    
+}
 
 .footer {
   background:var(--color-dark);

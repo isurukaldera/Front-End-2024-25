@@ -18,6 +18,7 @@
   <link rel="shortcut icon" href="../images/Vain.png" type="image/png" />
 </head>
 <body>
+    <!-- Navbar Section -->
     <nav class="navbar">
     <div class="container">
       <div class="logo">
@@ -36,21 +37,96 @@
       </div>
     </div>
   </nav>
+  <!-- Map Section -->
+<section id="about-head" class="section-p1 modern-about">
+    <div class="about-text">
+        <h2>Discover Who We Are</h2>
+        <p>
+            Based in Lahti, Finland, Vain is not just a store — it’s a statement. We’re here for those who want everything, without limits. From high-performance electronics and modern home appliances to the latest in fashion, footwear, lifestyle gear, and more — Vain delivers it all, fast and fearlessly.
+        </p>
+        <p>
+            With over 29 years of industry experience and a team of 1800+ passionate professionals, we’ve evolved into a shopping empire that’s as versatile as it is daring. Whether you’re upgrading your home, your tech, or your style — we make it easy, affordable, and undeniably stylish.
+        </p>
+        <a href="#" class="cta-button">Explore about us</a>
+    </div>
 
+    <div class="about-map">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9378.961701574003!2d25.6509682!3d60.9843856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468e025149ebff13%3A0x3117982cf0890a50!2sLUT%20University%20Lahti%20Campus!5e0!3m2!1sen!2sfi!4v1717684799907" 
+            width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+</section>
+  <section class="faq bg-light">
+    <div class="container-sm">
+      <h3 class="text-xl text-center">
+        Frequently Ask Questions
+      </h3>
+      <ul class="faq-menu">
+        <li class="active">All</li>
+        <li>Orders</li>
+        <li>Tracking</li>
+      </ul>
+      <div class="faq-content">
+        <div class="faq-group">
+          <div class="faq-group-header">
+            <h4 class="text-md">
+              How To get a refund for broken items during shipping ?
+            </h4>
+            <i class="fas fa-minus"></i>
+          </div>
+          <div class="faq-group-body open">
+            <p>
+              Contact the seller and/or the shipping carrier, document the damage, and potentially file a claim with the carrier if the package was insured. The seller may offer a refund, replacement, or repair, while the carrier will likely compensate you if a claim is valid. 
+            </p>
+          </div>
+        </div>
 
+        <div class="faq-group">
+          <div class="faq-group-header">
+            <h4 class="text-md">
+               How to Track Your Order?
+            </h4>
+            <i class="fas fa-plus"></i>
+          </div>
+          <div class="faq-group-body">
+            <p>
+              After placing an order, check your email or account dashboard for a tracking number. Use this number on the shipping carrier’s website to monitor delivery status. If no tracking information is available, contact the seller for an update.
+          </div>
+        </div>
 
+        <div class="faq-group">
+          <div class="faq-group-header">
+            <h4 class="text-md">
+              How to Return an Item?
+            </h4>
+            <i class="fas fa-plus"></i>
+          </div>
+          <div class="faq-group-body">
+            <p>
+              Log in to your account, go to your order history, and select the item you wish to return. Follow the return instructions, including repacking the item and using the provided return label. Once the seller receives and verifies the item, a refund or exchange will be processed.
+            </p>
+          </div>
+        </div>
 
-
-
-
-
-
-
-
-
-
-
-
+        <div class="faq-group">
+          <div class="faq-group-header">
+            <h4 class="text-md">
+              How to Cancel an Order?
+            </h4>
+            <i class="fas fa-plus"></i>
+          </div>
+          <div class="faq-group-body">
+            <p>
+              Go to your account’s order history and select the order you want to cancel. If the order hasn’t been shipped yet, you’ll see a Cancel option. If it’s already in transit, you’ll need to wait for delivery and then request a return. For urgent cancellations, contact customer support directly.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer Section -->
     <footer class="footer">
   <div class="footer-container">
     <div class="card">
@@ -98,5 +174,36 @@
     <p>© 2025 Vain E-commerce | All Rights Reserved</p>
   </div>
 </footer>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+  const faqContainer = document.querySelector('.faq-content');
+
+  faqContainer.addEventListener('click', (e) => {
+    const header = e.target.closest('.faq-group-header');
+    if (!header) return;
+
+    const group = header.parentElement;
+    const body = group.querySelector('.faq-group-body');
+    const icon = header.querySelector('i');
+
+    // Toggle current
+    body.classList.toggle('open');
+    icon.classList.toggle('fa-plus');
+    icon.classList.toggle('fa-minus');
+
+    // Close others
+    const allGroups = faqContainer.querySelectorAll('.faq-group');
+    allGroups.forEach((item) => {
+      if (item !== group) {
+        item.querySelector('.faq-group-body').classList.remove('open');
+        const i = item.querySelector('i');
+        i.classList.remove('fa-minus');
+        i.classList.add('fa-plus');
+      }
+    });
+  });
+});
+
+</script>
 </body>
 </html>
