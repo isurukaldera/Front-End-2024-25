@@ -35,6 +35,19 @@
           <li><a class="btn" href="Login.html"><i class="fas fa-user"></i> Login</a></li>
         </ul>
       </div>
+      <button class="hamburger-button">
+       <div class="hamburger-line"></div>
+       <div class="hamburger-line"></div>
+       <div class="hamburger-line"></div>
+      </button>
+      <div class="mobile-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="Aboutus.html">About Us</a></li>
+          <li><a class="btn" href="Login.html"><i class="fas fa-user"></i> Login</a></li> 
+        </ul>
+      </div>
     </div>
   </nav>
   <!-- Map Section -->
@@ -176,36 +189,6 @@
     <p>© 2025 Vain E-commerce | All Rights Reserved</p>
   </div>
 </footer>
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-  const faqContainer = document.querySelector('.faq-content');
-
-  faqContainer.addEventListener('click', (e) => {
-    const header = e.target.closest('.faq-group-header');
-    if (!header) return;
-
-    const group = header.parentElement;
-    const body = group.querySelector('.faq-group-body');
-    const icon = header.querySelector('i');
-
-    // Toggle current
-    body.classList.toggle('open');
-    icon.classList.toggle('fa-plus');
-    icon.classList.toggle('fa-minus');
-
-    // Close others
-    const allGroups = faqContainer.querySelectorAll('.faq-group');
-    allGroups.forEach((item) => {
-      if (item !== group) {
-        item.querySelector('.faq-group-body').classList.remove('open');
-        const i = item.querySelector('i');
-        i.classList.remove('fa-minus');
-        i.classList.add('fa-plus');
-      }
-    });
-  });
-});
-
-</script>
 </body>
+<script src="main.js"></script>
 </html>

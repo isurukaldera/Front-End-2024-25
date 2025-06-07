@@ -35,6 +35,19 @@
           <li><a class="btn" href="Login.html"><i class="fas fa-user"></i> Login</a></li>
         </ul>
       </div>
+      <button class="hamburger-button">
+       <div class="hamburger-line"></div>
+       <div class="hamburger-line"></div>
+       <div class="hamburger-line"></div>
+      </button>
+      <div class="mobile-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="Aboutus.html">About Us</a></li>
+          <li><a class="btn" href="Login.html"><i class="fas fa-user"></i> Login</a></li> 
+        </ul>
+      </div>
     </div>
   </nav>
   <section class="product-detail">
@@ -84,21 +97,6 @@
       </div>
     </div>
   </section>
-
-
-  <script>
-    const mainImage = document.getElementById('mainImage');
-    const thumbnails = document.querySelectorAll('.thumbnail');
-
-    thumbnails.forEach(thumb => {
-      thumb.addEventListener('click', () => {
-        mainImage.src = thumb.src;
-
-        thumbnails.forEach(t => t.classList.remove('active'));
-        thumb.classList.add('active');
-      });
-    });
-  </script>
 
 
 
@@ -151,4 +149,7 @@
     <p>© 2025 Vain E-commerce | All Rights Reserved</p>
   </div>
 </footer>
+
   </body>
+  <script src="main.js"></script>
+  </html>

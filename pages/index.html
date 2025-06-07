@@ -35,6 +35,19 @@
           <li><a class="btn" href="Login.html"><i class="fas fa-user"></i> Login</a></li>
         </ul>
       </div>
+      <button class="hamburger-button">
+       <div class="hamburger-line"></div>
+       <div class="hamburger-line"></div>
+       <div class="hamburger-line"></div>
+      </button>
+      <div class="mobile-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="Aboutus.html">About Us</a></li>
+          <li><a class="btn" href="Login.html"><i class="fas fa-user"></i> Login</a></li> 
+        </ul>
+      </div>
     </div>
   </nav>
 <!-- Banner Section -->
@@ -204,23 +217,7 @@
     <p>© 2025 Vain E-commerce | All Rights Reserved</p>
   </div>
 </footer>
-  <script>
-    const btns = document.querySelectorAll(".nav-btn");
-    const slides = document.querySelectorAll(".video-slide");
 
-    const slidernav = function(manual) {
-      btns.forEach(btn => btn.classList.remove("active"));
-      slides.forEach(slide => slide.classList.remove("active"));
-
-      btns[manual].classList.add("active");
-      slides[manual].classList.add("active");
-    }
-
-    btns.forEach((btn, i) => {
-      btn.addEventListener("click", () => {
-        slidernav(i);
-      });
-    });
-  </script>
 </body>
+<script src="main.js"></script>
 </html>
