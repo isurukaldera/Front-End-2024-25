@@ -1199,7 +1199,7 @@ section{
 
 }
 
-
+/*670*/
 @media (max-width: 670px) {
   .hero {
     min-height: 50vh;
@@ -1322,7 +1322,7 @@ section{
 
 }
 
-
+/*500*/
 @media (max-width: 500px) {
   .hero {
     min-height: 40vh;
