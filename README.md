@@ -1,19 +1,19 @@
-**Name **: Isuru Indrajith Kaldera Hollupathirage
+**Name**: Isuru Indrajith Kaldera Hollupathirage
 
 **Project Running Video**: https://youtu.be/VN9A6gLP9wc?si=ALGdkUbnInzf0lge
 
 **How to Run the Project**
-First download and install 
-1.Visual Studio.
-2.Git (optional, for cloning).
+#First download and install 
+1.**Visual Studio.**
+2.**Git (optional, for cloning)**.
 
-Instructions
-1. Download the Project
+##Instructions
+###Download the Project
 Option 1: Download ZIP
 Click "Code" > "Download ZIP" on GitHub, then extract the folder.
 Option 2: Clone with Git
 
-2.Open Project in VS Code
+####Open Project in VS Code
 Launch VS Code.
 Go to File > Open Folder and select the extracted project folder.
 
